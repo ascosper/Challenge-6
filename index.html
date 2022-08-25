@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Today</title>
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -10,22 +10,26 @@
 <body>
 
     <main class="flex-row justify-space-between">
-        <div class="col-12 col-md-4">
+        <div class="SearchWeather">
           <div class="card">
             <h3 class="card-header text-uppercase">Search By City</h3>
             <form id="user-form" class="card-body">
-              <label class="form-label" for="city">City</label>
-              <input name="city" id="city" type="text" autofocus="true" class="form-input" />
-              <button type="submit" class="btn">Get Weather</button>
+              <label class="form-label" for="city">Enter a City</label>
+              <input name="city" id="location" type="text" class="form-input" />
+              <button type="submit" class="btn" id="btn">Get Weather</button>
             </form>
           </div>
-          <div class="col-12 col-md-8">
+          <div class="locationWeather">
             <h2 class="subtitle">Showing Weather for: <span id="weather-search-term"></span></h2>
-            <div id="weather-container" class="list-group"></div>
-          </div>
-        </main>
+            <div id="weather-container" class="list-group">
+                <div class="day-1"></div>
+                <div class="day-2"></div>
+                <div class="day-3"></div>
+                <div class="day-4"></div>
+                <div class="day-5"></div>
+            </div>
         </div>
-    <div class = "city" id="city"> <!-- how to put input here--></div>
+    </main>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
